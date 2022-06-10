@@ -40,5 +40,7 @@ def st_demo():
             .encode(x='x:Q', y='y:Q'))
 
 def main():
-    if st_utils.check_passwd():
-        st_demo()
+    while not st_utils.check_passwd():
+        pass
+    
+    st_demo()
