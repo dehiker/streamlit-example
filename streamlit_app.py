@@ -4,7 +4,7 @@ import math
 import pandas as pd
 import streamlit as st
 
-import check_passwd
+import st_utils
 
 """
 # Welcome to Streamlit!
@@ -40,5 +40,5 @@ def st_demo():
             .encode(x='x:Q', y='y:Q'))
 
 def main():
-    if check_passwd():
+    if st_utils.check_passwd():
         st_demo()

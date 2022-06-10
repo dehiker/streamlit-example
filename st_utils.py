@@ -2,7 +2,7 @@
 
 import streamlit as st
 
-def check_password():
+def check_passwd():
     """Returns `True` if the user had a correct password."""
 
     def password_entered():
@@ -37,6 +37,6 @@ def check_password():
         # Password correct.
         return True
 
-if check_password():
+if check_passwd():
     st.write("Here goes your normal Streamlit app...")
     st.button("Click me")
