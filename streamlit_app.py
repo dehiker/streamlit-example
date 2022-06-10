@@ -39,8 +39,13 @@ def st_demo():
             .mark_circle(color='#0068c9', opacity=0.5)
             .encode(x='x:Q', y='y:Q'))
 
+
 def main():
     while not st_utils.check_passwd():
         pass
-    
+
     st_demo()
+
+
+if __name__ == "__main__":
+    main()
