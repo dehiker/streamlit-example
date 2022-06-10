@@ -4,7 +4,7 @@ import math
 import pandas as pd
 import streamlit as st
 
-from . import check_passwd
+import check_passwd
 
 """
 # Welcome to Streamlit!
